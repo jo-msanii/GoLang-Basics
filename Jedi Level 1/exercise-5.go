@@ -2,17 +2,26 @@ package main
 
 import "fmt"
 
-type dollar int
+const (
+	a = 42
+	b = 42.78
+	c = "james Bond"
 
-var x dollar
+	e = iota
+	f = iota
+	g = iota
+)
 
 func main() {
 
-	y := fmt.Sprintf("The value of x is %v", x)
-	fmt.Print("\n", y, "\n")
-
-	x = 42
-
-	fmt.Print(x, "\n")
+	fmt.Println(a)
+	fmt.Println(b)
+	fmt.Println(c)
+	fmt.Printf("%T\n", a)
+	fmt.Printf("%T\n", b)
+	fmt.Printf("%T\n", c)
+	fmt.Println(e)
+	fmt.Println(f)
+	fmt.Println(g)
 
 }
