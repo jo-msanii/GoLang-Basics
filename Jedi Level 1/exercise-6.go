@@ -15,8 +15,8 @@ func main() {
 	mb := 1024 * kb
 	gb := 1024 * mb
 
-	fmt.Printf("%d\t\t\t%b\n", kb, kb)
-	fmt.Printf("%d\t\t\t%b\n", mb, mb)
-	fmt.Printf("%d\t\t%b", gb, gb)
+	fmt.Printf("%d\t\t\t%b\t\t\t\t%x\n", kb, kb, kb)
+	fmt.Printf("%d\t\t\t%b\t\t\t%x\n", mb, mb, kb)
+	fmt.Printf("%d\t\t%b\t\t%x\n", gb, gb, kb)
 
 }
